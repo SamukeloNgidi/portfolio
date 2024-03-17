@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 import { Project } from '../_models/project';
-import { Tag } from '../_models/tag';
 import { ProjectsService } from '../_services/projects.service';
 
 @Component({

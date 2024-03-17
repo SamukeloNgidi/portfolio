@@ -13,11 +13,17 @@ export class ProjectCardComponent {
   /*bsModalRef?: BsModalRef; //serves a reference to the model
 
   constructor(private modalService: BsModalService) {
-
   }
 
   openProjectModal() {
     this.bsModalRef = this.modalService.show('');
   }*/
+
+  openProjectModal() {
+    const modalDiv = document.getElementById('staticBackdrop');
+    if(modalDiv != null){
+      modalDiv.style.display = 'block';
+    }
+  }
 
 }

@@ -2,7 +2,37 @@
     <div class="card-body">
         <h5 class="card-title">{{project.name}}</h5>
         <p class="card-text">{{project.summary}}</p>
-        <button class="btn btn-outline-primary">View More</button> <!--(click)="openProjectModal()"-->
+        <!-- <button class="btn btn-outline-primary" (click)="openProjectModal()">View More</button> -->
+        <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">View More</button>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h1 class="modal-title fs-5" id="staticBackdropLabel">{{project.name}}</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img src={{project.pictures}} alt="picture" width="256" height="256" class="rounded"> 
+                <br>
+                {{project.description}}
+            </div>
+            <div>
+                You can find this project on Github <a href={{project.projectLink}} target="_blank">here</a>
+            </div>
+            <br>
+            <div class="d-flex flex-wrap justify-content-center">
+                <div *ngFor="let tag of project.tags">
+                    <div class="tag me-2 mb-2" [style.background-color]="tag.color">{{tag}}</div>
+                </div>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+        </div>
     </div>
 
     <div class="card-footer">

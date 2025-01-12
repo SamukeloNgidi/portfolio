@@ -27,12 +27,20 @@ export class ProjectsService {
       tags: [Tag.ANGULAR, Tag.TYPESCRIPT]},
     
     { id: 2, 
-      name: 'SpringBoot-RESTful-API-CRUD', 
-      summary: 'RESTful API with Spring Boot', 
-      description: 'A Representational State Transfer Application Programming Interface in Spring Boot to expose functionalities of your application over HTTP, following the principles of REST.', 
-      projectLink: 'https://github.com/SamukeloNgidi/SpringBoot-RESTful-API-CRUD', 
+      name: 'Quiz App', 
+      summary: 'React Quiz App', 
+      description: 'A react quiz app that allows you to take a quiz, see correct and incorrect answers, and gives you the total score.', 
+      projectLink: 'https://github.com/SamukeloNgidi/quiz-app', 
       pictures: ["../../assets/portfolio-icon.png"], 
-      tags: [Tag.JAVA, Tag.SPRINGBOOT]}
+      tags: [Tag.REACT, Tag.JSX]},
+
+      { id: 3, 
+        name: 'SpringBoot-RESTful-API-CRUD', 
+        summary: 'RESTful API with Spring Boot', 
+        description: 'A Representational State Transfer Application Programming Interface in Spring Boot to expose functionalities of your application over HTTP, following the principles of REST.', 
+        projectLink: 'https://github.com/SamukeloNgidi/SpringBoot-RESTful-API-CRUD', 
+        pictures: ["../../assets/portfolio-icon.png"], 
+        tags: [Tag.JAVA, Tag.SPRINGBOOT]}
   ];
   
   constructor() { }

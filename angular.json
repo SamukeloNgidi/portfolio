@@ -14,7 +14,7 @@
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
             "outputPath": "dist/portfolio",
-            "baseHref": "/portfolio-app/",
+            "baseHref": "/portfolio/",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
